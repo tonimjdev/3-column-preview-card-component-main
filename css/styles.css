@@ -1,0 +1,148 @@
+/* ## Layout
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+### Primary
+Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%)
+
+### Neutral
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%) */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+:root {
+    --brightOrange: hsl(31, 77%, 52%);
+    --darkCyan: hsl(184, 100%, 22%);
+    --veryDarkCyan: hsl(179, 100%, 13%);
+    --transparentWhite: hsla(0, 0%, 100%, 0.75);
+    --veryLightGray: hsl(0, 0%, 95%);
+}
+.body {
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.contenedor { 
+    color: var(--veryLightGray);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    max-width: 1024px;
+    margin: auto;
+    font-weight: 200;
+    position: relative;
+  
+
+}
+.image {
+    width: 5em;
+    margin-bottom:2em;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display';
+    text-transform: uppercase;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+p {
+    line-height: 2em;
+}
+.col1 {
+    background-color: var(--brightOrange);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 4em;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+
+}
+.col2 {
+    background-color: var(--darkCyan);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 4em;
+    
+
+}
+.col3 {
+    background-color: var(--veryDarkCyan);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 4em;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+
+}
+.button1, .button2, .button3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5em;
+    margin-bottom: 0.5em;
+    width: 150px;
+    border-radius: 2em;
+    padding: 0.8em;
+    border: 2px solid #fff;
+    text-align: center;
+    font-weight: 400;
+}
+.button1:hover {
+    background: #fff;
+    cursor: pointer;
+    color:var(--brightOrange);
+}
+.button2:hover {
+    background: #fff;
+    cursor: pointer;
+    color:var(--darkCyan);
+}
+.button3:hover {
+    background: #fff;
+    cursor: pointer;
+    color:var(--veryDarkCyan);
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+.footer {
+    position: relative;
+    padding-bottom: 3em;
+}
+
+@media (max-width: 375px) {
+    .contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    }
+    .col1 {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 0;
+    }
+    .col3 {
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 0;
+
+    }
+}
