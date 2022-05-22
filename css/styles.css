@@ -128,7 +128,7 @@ p {
     padding-bottom: 3em;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 500px) {
     .contenedor {
     display: flex;
     flex-direction: column;
